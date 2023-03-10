@@ -89,5 +89,8 @@ Kernel32.dll has been loaded at 0x00007ffa435e0000
 Bye!
 ```
 
+## Caveats
+Given that the stack gets overwritten during the call, all variables passed by reference need to be stored on the heap.
+
 ## Credits
 Thanks to [William Burgess](https://twitter.com/joehowwolf) for [Spoofing Call Stacks To Confuse EDRs](https://labs.withsecure.com/blog/spoofing-call-stacks-to-confuse-edrs).
